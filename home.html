@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(../images/homebg.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                height: 100%;
+                overflow: hidden;
+            }
+            @font-face{
+            font-family:"Rascal";
+            src:url("./fonts/RASCAL__.ttf") format("truetype");
+            }
+            @font-face {
+            font-family:"Pixelade" ;
+            src: url("./fonts/PIXELADE.TTF");
+            }
+            h1{
+                font-family:"Rascal";
+                color:rgb(250, 241, 230);
+                text-align:center;
+                left: 0;
+                line-height: 200px;
+                margin-top: -100px;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                width: 100%;
+                font-size: 300%;
+            }
+            .circle-container{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 600px;
+                height: 600px;
+                pointer-events: none;
+            }
+            .tooltip{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform-origin: 50% 50%;
+                pointer-events: auto;
+                transform:
+                translate(-50%, -50%)
+                rotate(var(--a))
+                translate(var(--r))
+                rotate(calc(-1 * var(--a)));
+                display: inline-block;
+                cursor: pointer;
+            }
+            .img-wrap{
+                position: relative;
+                display: inline-block;
+                transform: translate(0,0);
+            }
+            .tooltiptext{
+                visibility: hidden;
+                bottom: calc(100% + 10px);
+                left: 50%;
+                transform: translateX(-50%);
+                width: max-content;
+                background-color: rgb(250, 241, 230);
+                color: deeppink;
+                text-align: center;
+                padding: 5px 10px;
+                pointer-events: none;
+                border-radius: 20px;
+                position: absolute;
+                z-index: 1;
+                font-family: "Pixelade";
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
+        <title>home</title>
+    </head>
+    <body>
+        <h1>take a look around!</h1>
+        <div class="circle-container">
+        <a class="tooltip" href="fashion.html" style="--a:-90deg; --r:260px;">
+            <span class="img-wrap">
+                <span class="btn-face">
+            <img src="/images/fashionbutton.png" alt="fashion" style="width: 92px;height: 107px;">
+            </span>
+            <span class="tooltiptext">fashion</span>
+            </span>
+        </a>
+        <a class="tooltip" href="about.html" style="--a:-30deg; --r:260px;">
+            <span class="img-wrap">
+            <span class="btn-face">
+            <img src="/images/aboutbutton.png" alt="about" style="width: 134px;height: 126px;">
+            </span>
+            <span class="tooltiptext">about me</span>
+            </span>
+        </a>
+        <a class="tooltip" href="blythe.html" style="--a:30deg; --r:260px;">
+            <span class="img-wrap">
+            <span class="btn-face">
+            <img src="/images/blythebutton.png" alt="blythe" style="width: 92px;height: 107px;">
+            </span>
+            <span class="tooltiptext">blythe doll</span>
+            </span>
+        </a>
+        <a class="tooltip" href="media.html" style="--a:90deg; --r:260px;">
+            <span class="img-wrap">
+            <span class="btn-face">
+            <img src="/images/mediabutton.png" alt="media" style="width: 92px;height: 107px;">
+            </span>
+            <span class="tooltiptext">media library</span>
+            </span>
+        </a>
+        <a class="tooltip" href="crafts.html" style="--a:150deg; --r:260px;">
+            <span class="img-wrap">
+            <span class="btn-face">
+            <img src="/images/craftbutton.png" alt="crafts" style="width: 73px;height: 73px;">
+            </span>
+            <span class="tooltiptext">arts & crafts</span>
+            </span>
+        </a>
+        <a class="tooltip" href="blog.html" style="--a:210deg; --r:260px;">
+            <span class="img-wrap">
+            <span class="btn-face">
+            <img src="/images/blogbutton.png" alt="blog" style="width: 192px;height: 92px;">
+            </span>
+            <span class="tooltiptext">blog</span>
+            </span>
+        </a>
+        </div>
+    </body>
+</html>

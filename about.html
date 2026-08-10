@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="icon" type="image/x-icon" href="./images/deer.gif">
+     <style>
+     body{
+        background-image:url(./images/aboutbg.gif);
+     }
+     @font-face{
+            font-family:"Orange";
+            src:url("./fonts/Orange.ttf") format("truetype");
+            }
+     @font-face{
+            font-family: "StampingNico";
+            src:url("./fonts/StampingNico.ttf") format("truetype");
+     }
+    h1{
+      font-family: "Orange";
+      color: olivedrab;
+    }
+    h2{
+      font-family: "Orange";
+      color: olivedrab;
+    }
+    body{
+      font-family: "StampingNico";
+      color: saddlebrown;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "menu content";
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        background-color: lemonchiffon;
+        padding: 10px;
+        border-radius: 0;
+    }
+    .container-border{
+      border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAFQ0lEQVR4AaxYC5bbIAwU7v2PXNOZkQTCNnH2bf3EMPogJEyyaQ/bPJ3PSVjHJnxrbsUz+WS9103OXsIXei905lgCrabYxYQ9JqxvyzKlkFMM/iIyyVmMk94KzQYbn6NhpTJYA294Oh8cghlcZkaVAxSKsBTXVz/cmR80xPMs+ZGQTnkEZrdCGcAdmxPgZFCKeANuqNwt/wOVVWCz0B6t+gbzleEQJT0eKTjdUCONryK+2bUekHGgEq6tI/1pO1oyzHXXaofrRVpchJewH7prPcffKL3hkhzqzSGDepy0W1vrfHBHU/e9cRed2GoPI6aG/PRxeUfO3KvjQbrczhiTgzFwS46GJJ8lImJ6jv3oHEsUpZLm1aJTdhKbTGqB8WFS2YD0gUqyOxyC9IMGgBQAVQ7QBzk7fRy9/1WKOFh/M1hBHwco5FQbrAGKJL9CvNDhRkhtqtrhosgkoPY2arI9rx5llCE2ETfD2aAfRxDcwVONdJkArvVyMm5RMECJAaASUIkUgjSzFkfpq8+S7/STZiyG/Cf3w+bQ1xO1+xP9yFG5DBVaVe58rp3sHpWWh2Rh8lcPRZ0A0IQEVEKFvUkBUOcA1Uk4UPORW7pW8VQo13Kkh5zD9XrSfYn3Qh+afTCpBvSkmVA59c+jWfsUoA0FloGKF5h5oWbGrjjURu9+R2EAlYBKTmm8Q1L3wNcAb0xgLrH8nl+Bh38bYBOPbuN7bBRq+bQkT/NH57ogDmc1Tk3ul3TVPQrNTjNV6i0etyu90y/x4wo4I72fJDbNtKB6uamPQtOwndWeYBvyewcq3yQZhWZn15mdcfj32T7RzP+zZpibw/fVRXUamHlHoWn4/fxNM2uMtNpf5Sqo2XG1sTsO2QWmRxcGDikPoFDB6pymyczwYUYuiuGRR9XiJzuN+NTD7BLOI/xuvGJ1asEaUE0KFawx09RR3upzrfu0w3DfXn38SW7hH8vTPgwg15h7JbUVnBbWpMQVRAAkjZinHQol3LdC/UPT7nveqrIvYh4WmT/Np3eMFKNQXo05zryS+pVztBZ5cbdK6shRLFcay65mPw1Z8wTn3itTEGAUCr6Rtbjd1s+Ld62sOeva5xXNRqHs7ABYPKCSHmfr7/k5DZeogQk0XYacFxvubfdHm/GDEBHUZz19Fkr/vgx4q7NyuCgyTaDpMuRcbaq92itHEyV6nKj3hV9FbAPtDJ1dFl1uQPp9Pn16QUYhlYScL6td8ssJ6HT2PiofhY7ihystq2HVECODjgbKVeQcxhpVuQJqqJwCs5gOFC1BExIpACkAUAmoRAqOQwoBp8sph8Xj+h+fCmo9IE2gOrs4WP8VpfyeOL8g7icaG2mKbsS/hno03y163qbnYSrJKJSdcdRO2eqiI0A6mgWVKAtACsAiPSjk7BYPFInWA6To5KBApAOQGhr+NQwON9BlFBr5fjeNspCmcqi/lVGo2gBkQlCJ99P1F4qGj3oeBwODv8Xf/FEAU3C83tHnexNZ4rQ+xkToT6dbzjBE334nsjvNsQO74pANQM5PKCiv8PxvvIinnSOuqlvRGG0cWg8g5wCVeKCZ7uWE8SbHq8/AH8/R8W0dihu2XYwCHpwyCRRBGIWqLQCNdbBrDrgk5BxSADWWHCYJeR0yAriWA1TS9V56bUvLGl8bIqRYW//W2/VZm5JXGQUPTkVU+CamxgdXfoGhRjN8osaJQpOgCUnng7siYwFdagAX06xgdE9+H93c30bFTU/8jwj2yDVxsH4nld9Mi7rpWQqVQ+YVFLtzKlQRYt/BN/Hrb9Z/AAAA///hYLH7AAAABklEQVQDAL2ihGpxDqEuAAAAAElFTkSuQmCC') 14 /  14px / 0 round;
+      border-width:  14px;
+      border-style:  solid; 
+      padding: 1px;         
+      width: min(100%, 900px);
+      margin: 100px auto;
+      box-sizing: border-box;
+    }
+.container div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container div.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.container div.side {
+  grid-area: menu;
+}
+.container div.content {
+  grid-area: content;
+}
+a:link {
+  color: palevioletred;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: lightpink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: yellowgreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: coral;
+  background-color: transparent;
+  text-decoration: underline;
+}
+     </style>
+  </head>
+      <body>
+        <div class="container-border">
+        <div class="container">
+            <div class="header">
+              <a href="home.html"><img src="./images/butterflyhome.gif" style="width: 92px;height: 57px;"></a>
+              <h1 style="margin: 0";>about me & my page</h1>
+            </div>
+            <div class="side">
+              <img src="./images/nokia.png" style="width: 200px;height: 451px;">
+              <iframe src="https://www3.cbox.ws/box/?boxid=3558757&boxtag=aBXeyf" width="200px" height="300px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            </div>
+            <div class="content"><h2>hi! i'm claire.</h2><p>i love music, fashion, and crafts. you can find all of these things and more things that i like here on my webpage. i also have a blog that you can check out, i write about more personal stuff there. i love checking out other people's personal websites, you should let me know what yours is called!</p>
+            <img src="./images/vinedivider.gif" style="width: 545px;height: 30px;">
+            <h2>how i built my website</h2>
+            <p>i am learning html and css as i go, so my code is a bit of a mess. i hope to clean up my code as i learn more. below is an incomplete list of the places where i got my code, graphics, fonts, etc.</p>
+            <ul>
+              <li><a href="https://pixelsafari.neocities.org/">coco's pixel safari</a></li>
+              <li><a href="https://sakuradreams.neocities.org/Pages/Goodies">sakura dreams</a></li>
+              <li><a href="https://bettysgraphics.neocities.org/backgrounds">betty's graphics</a></li>
+              <li><a href="https://textures.neocities.org/">texture town</a></li>
+              <li><a href="https://eggnored.tumblr.com/post/91084109043/i-know-a-lot-of-these-background-masterposts">eggnored</a></li>
+              <li><a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49">32-bit cafe</a></li>
+              <li><a href="https://codepen.io/sadness97/full/dPoEqNN">sadgrl.online</a></li>
+              <li><a href="https://ramblingmerlin.neocities.org/recources">ramblingmerlin</a></li>
+              <li><a href="https://pixelmoondust.neocities.org/archives/archivedtiles">pixel moondust</a></li>
+              <li><a href="https://www.fontsquirrel.com/">fontsquirrel</a></li>
+              <li><a href="https://maxbittker.github.io/broider/">broider</a></li>
+              <li><a href="https://dithermark.com/">dithermark</a></li>
+              <li><a href="https://blinkies.cafe/wall">blinkies.cafe</a></li>
+              <li><a href="https://www.w3schools.com/html/default.asp">w3schools</a></li>
+              <li><a href="https://deathgenerator.com/#nokia">deathgenerator</a></li>
+              <li><a href="https://www.glitter-graphics.com/">glitter-graphics</a></li>
+              <li><a href="https://99gifshop.neocities.org/">99gifshop</a></li>
+              <li><a href="gifcities.org">gifcities</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
