@@ -11,35 +11,40 @@
             background-image: url(./images/bgfan.gif);
         }
         .parent {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            gap: 8px;
-        }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
     
-        .div1 {
-            grid-row: span 3 / span 3;
-        }
+.div1 {
+    grid-row: span 2 / span 2;
+}
 
-        .div2 {
-            grid-column: span 2 / span 2;
-            grid-row: span 6 / span 6;
-        }
-        .div3 {
-            grid-row: span 3 / span 3;
-            grid-column-start: 1;
-            grid-row-start: 4;
-        }
-        .div4 {
-            grid-row: span 3 / span 3;
-            grid-column-start: 4;
-            grid-row-start: 1;
-        }
-        .div5 {
-            grid-row: span 3 / span 3;
-            grid-column-start: 4;
-            grid-row-start: 4;
-        }
+.div2 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
         iframe{
             height:"500px";
             width:"300px";
@@ -49,11 +54,17 @@
 </head>
 <body>
     <div class="parent">
-    <div class="div1"><img src="./images/swanpond.gif" alt="swan swimming across pond"></div>
-    <div class="div2"><iframe src=https://blog.clairebot.world/ title="my blog"></iframe></div>
-    <div class="div3"><img src="./images/februarybaby.gif" alt="february baby"></div>
-    <div class="div4"><img src="./images/fairy.gif" alt="fairy"></div>
-    <div class="div5"><img src="./images/dove.gif" alt="dove"></div>
+    <div class="div1"><img src="./images/swanpond.gif" alt="swan swimming across pond">
+    <a href="https://blog.clairebot.world">visit my blog site</a>
+    </div>
+    <div class="div2">
+        <p>i write about personal stuff on my blog, like my boyfriend having cancer. i also write about making this website, having a flip phone, and whatever else i feel like. i started this blog before i made this website, it inspired me.</p>
+    </div>
+    <div class="div3"><iframe src=https://blog.clairebot.world/ title="my blog"></iframe></div>
+    <div class="div4">
+        <p>thank you for checking it out.</p>
+    </div>
+    <div class="div5"><img src="./images/fairy.gif" alt="fairy"></div>
     </div>
 </body>
 </html>
