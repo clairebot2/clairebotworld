@@ -23,7 +23,7 @@
         }
         .parent {
             display: grid;
-            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-columns: 1fr 2fr 2fr 2fr;
             grid-template-rows: repeat(4, 1fr);
             grid-auto-rows: 1fr;
             gap: 8px;
@@ -60,28 +60,10 @@
 }
 
 .div3 {
-    grid-column: span 2 / span 2;
+    grid-column: span 3 / span 3;
     grid-row: 1 / span 4;
     grid-column-start: 2;
     grid-row-start: 1;
-    height: 100%;
-    width: 100%;
-}
-
-.div4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 1;
-    background-color: powderblue;
-    height: 100%;
-    width: 100%;
-}
-
-.div5 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    background-color: powderblue;
     height: 100%;
     width: 100%;
 }
@@ -99,15 +81,11 @@
     <a href="https://blog.clairebot.world">visit my bear blog site</a>
     </div>
     <div class="div2">
-        <p>i write about personal stuff on my blog, like my boyfriend having cancer. i also write about making this website, having a flip phone, and whatever else i feel like. i started this blog before i made this website, it inspired me.</p>
+        <p>i write about personal stuff on my blog, like my boyfriend having cancer. i also write about making this website, having a flip phone, and whatever else i feel like. i started this blog before i made this website, it inspired me. thank you for checking it out.</p>
+        <a href="./home.html"><img src="./images/househome.gif" alt="home"></a>
     </div>
     <div class="div3 stars">
         <iframe src="https://blog.clairebot.world/" title="my blog"></iframe>
-    </div>
-    <div class="div4">
-        <p>thank you for checking it out.</p>
-    </div>
-    <div class="div5"><a href="./home.html"><img src="./images/househome.gif" alt="home"></a></div>
     </div>
 </body>
 </html>
