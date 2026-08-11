@@ -10,10 +10,56 @@
     body{
       background-image: url(./images/argyleglitter.gif);
     }
-      @font-face{
-            font-family:"Orange";
-            src:url("./fonts/Orange.ttf") format("truetype");
-            }
+    @font-face{
+            font-family:"Magazine";
+            src:url("./fonts/MagazineLetterByBrntlbrnl-Regular.ttf") format("truetype");
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 8px;
+    }
+    .div1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .div2 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    .div3 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .div4 {
+        grid-column: span 3 / span 3;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .div5 {
+        grid-column: span 3 / span 3;
+        grid-row: span 6 / span 6;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .div6 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+        grid-row-start: 6;
+    }
   </style>
 </head>
+    <body>
+            <div class="parent">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+            <div class="div5">5</div>
+            <div class="div6">6</div>
+        </div>
+    </body>
 </html>
