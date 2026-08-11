@@ -22,11 +22,15 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
             gap: 8px;
+            height: 520px;     
+            width: 720px;      
+            margin: 0 auto;
                 }
         .stars {
         border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAOdJREFUWEftmEEOgCAMBOG9vsf3ajxwwZjd2tWwitcKDFMLjbWYPNWEs0xQdabkRre1bAdkXbTZ+g9oM4hSnTWcNmoD2kxeAWdNtvnTRm1Bm0F19cuNDg+Kqj4blxnNgqDxExQZisYvjaqrFoGh9b4D2ptQ3TTRmwwaHRY0ulP07aE4u97JKDsQAbBxdj3f1L/VDbEmYZuHzjU2tex7aD2YetVxhIBvg6KJ347PpkRt/H9G+2JAxRE1LjNqB/pUEyM3OiyozS8dG9A+1epqh01J9Pjouy51jyArprsbY8dNUNYU+56N0R2B1XgrWUNKMwAAAABJRU5ErkJggg==') 14 /  14px / 0 round;
         border-width:  14px;
         border-style:  solid; 
+        height: 100%
                 }
   
     
@@ -47,6 +51,8 @@
     grid-row: span 4 / span 4;
     grid-column-start: 2;
     grid-row-start: 1;
+    height: 100%;
+    width: 100%;
 }
 
 .div4 {
@@ -62,10 +68,11 @@
     grid-row-start: 3;
     background-color: powderblue;
 }
-        .iframe{
+        .div3 iframe{
             height: 100%;
             width: 100%;
             border: none;
+            display: block;
         }   
     </style>
 </head>
@@ -78,7 +85,7 @@
         <p>i write about personal stuff on my blog, like my boyfriend having cancer. i also write about making this website, having a flip phone, and whatever else i feel like. i started this blog before i made this website, it inspired me.</p>
     </div>
     <div class="stars">
-        <div class="div3"><iframe src=https://blog.clairebot.world/ title="my blog"></iframe></div>
+        <div class="div3"><iframe src="https://blog.clairebot.world/" title="my blog"></iframe></div>
     </div>
     <div class="div4">
         <p>thank you for checking it out.</p>
