@@ -103,7 +103,6 @@
         height:450px;
         margin:0 auto;
         position:relative;
-        font-family:verdana, arial, sans-serif;
      } 
     #gallerywrapper #gallery {
         position:absolute;
@@ -137,18 +136,22 @@
         line-height:18px;
      } 
     #gallery .previous{ 
-        display:inline;
-        float:left;
-        margin-left:50px;
-        text-decoration:none;
-		url(./images/back.gif);
+        position: absolute;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		width: 44px;       
+  		height: 44px;
+  		z-index: 10;
+		background-image: url(./images/back.gif);
      } 
     #gallery .next{ 
-        display:inline;
-        float:right;
-        margin-right:50px;
-        text-decoration:none;
-		url(./images/next.gif);
+        position: absolute;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		width: 44px;       
+  		height: 44px;
+  		z-index: 10;
+		background-image: url(./images/next.gif);
      }
   </style>
 </head>
