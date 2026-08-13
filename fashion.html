@@ -54,6 +54,16 @@
         grid-column-start: 5;
         grid-row-start: 1;
    }
+    div.scroll-container {
+        background-color: white;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    div.scroll-container img {
+        padding: 10px;
+    }
+</div>
   </style>
 </head>
     <body>
@@ -61,7 +71,14 @@
             <div class="div4">
                 <h1>Welcome to my Wardrobe</h1>
             </div>
-            <div class="div5">5</div>
+            <div class="div5">
+                <div class="scroll-container">
+                    <img src="img_5terre.jpg" alt="Cinque Terre">
+                    <img src="img_forest.jpg" alt="Forest">
+                    <img src="img_lights.jpg" alt="Northern Lights">
+                    <img src="img_mountains.jpg" alt="Mountains">
+                </div>
+            </div>
             <div class="div6">
                 <a href="home.html">
                     <img src= "./images/hysterichome.gif" alt="home">
